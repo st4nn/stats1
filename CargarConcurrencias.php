@@ -4,25 +4,6 @@
 	$Fecha1 = $_POST['Fecha1'];
 	$Fecha2 = $_POST['Fecha2'];
 	
-	if ($Agrupacion == "Hora")
-	{
-		$Campo = "Hora";
-		$Funcion = "HOUR";
-		$Label = "CONCAT( HOUR( Hora ) ,  ':00' )";
-	}
-	elseif ($Agrupacion =="Dia")
-	{
-		$Campo = "Fecha";
-		$Funcion = "DAY";
-		$Label = "Fecha";
-	}
-	elseif ($Agrupacion =="Mes")
-	{
-		$Campo = "Fecha";
-		$Funcion = "MONTH";
-		$Label = "MONTH(Fecha)";
-	}
-	
 	$link=Conectarse();
 	$sql = "
 	SELECT 
